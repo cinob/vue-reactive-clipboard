@@ -1,0 +1,55 @@
+{
+  "name": "vue-reactive-clipboard",
+  "version": "0.0.0",
+  "author": {
+    "name": "cinob",
+    "email": "cinob@foxmail.com"
+  },
+  "keywords": [
+    "vue",
+    "vue2",
+    "vue3",
+    "clipboard",
+    "copy"
+  ],
+  "files": [
+    "dist",
+    "types/*.d.ts"
+  ],
+  "main": "./dist/vue-reactive-clipboard.umd.js",
+  "types": "types/index.d.ts",
+  "module": "./dist/vue-reactive-clipboard.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-reactive-clipboard.es.js",
+      "require": "./dist/vue-reactive-clipboard.umd.js"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue-demi": "^0.11.2"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.10",
+    "@vitejs/plugin-vue": "^1.3.0",
+    "@vue/compiler-sfc": "^3.0.5",
+    "typescript": "^4.3.2",
+    "vite": "^2.4.4",
+    "vue": "^3.0.5",
+    "vue-tsc": "^0.2.2"
+  }
+}
