@@ -1,6 +1,6 @@
 {
   "name": "vue-reactive-clipboard",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": {
     "name": "cinob",
     "email": "cinob@foxmail.com"
@@ -36,12 +36,11 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "vue-demi": "^0.11.2",
-    "vue-reactive-clipboard": "^0.0.1"
+    "vue-demi": "^0.11.2"
   },
   "peerDependencies": {
-    "@vue/composition-api": "^1.0.0-rc.1",
-    "vue": "^2.0.0 || >=3.0.0"
+    "@vue/composition-api": "^1.0.0-rc.2",
+    "vue": "^2.6.12 || >=3.0.0"
   },
   "peerDependenciesMeta": {
     "@vue/composition-api": {
@@ -55,6 +54,7 @@
     "typescript": "^4.3.2",
     "vite": "^2.4.4",
     "vue": "^3.0.5",
-    "vue-tsc": "^0.2.2"
+    "vue-tsc": "^0.2.2",
+    "vue-reactive-clipboard": "^0.0.1"
   }
 }
