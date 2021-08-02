@@ -39,7 +39,7 @@ watchEffect(() => {
 </script>
 ```
 ### `Vue2`
-
+Install [`@vue/composition-api`](https://github.com/vuejs/composition-api) as a dependency.
 ```html
 <template>
   <div>
