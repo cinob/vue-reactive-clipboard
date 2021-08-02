@@ -1,10 +1,9 @@
-import { ComputedRef, ref, unref } from 'vue-demi'
+import { ref } from 'vue-demi'
 
 export function useClipboard () {
   const text = ref('')
 
-  async function copy (val:any) {
-    val = unref(val)
+  async function copy (val: string) {
     try {
       await navigator.permissions.query({name:'clipboard-write'})
       await window.navigator.clipboard.writeText(val)
@@ -20,7 +19,7 @@ export function useClipboard () {
   }
   
   return {
-    text: text as ComputedRef<string>,
+    text,
     copy
   }
 }

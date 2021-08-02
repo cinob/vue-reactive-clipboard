@@ -1,5 +1,5 @@
-import { ComputedRef } from 'vue-demi'
+import { Ref } from 'vue-demi'
 declare function useClipboard (): {
-    text: ComputedRef<string>
-    copy: (val: string) => Promise<void>
+  text: Ref<string>
+  copy: (val: string) => Promise<void>
 }
