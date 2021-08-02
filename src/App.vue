@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue-demi'
-import { useClipboard } from '../lib/main'
+import { useClipboard } from 'vue-reactive-clipboard'
 const { text, copy } = useClipboard()
 
 const content = ref('click me to copy!')

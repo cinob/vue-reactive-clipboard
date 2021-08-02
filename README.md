@@ -24,7 +24,7 @@ Install with [npm](https://npmjs.com):
 </template>
 
 <script setup lang="ts">
-import { ref, watchEffect } from 'vue-demi'
+import { ref, watchEffect } from 'vue'
 import { useClipboard } from 'vue-reactive-clipboard'
 const { text, copy } = useClipboard()
 

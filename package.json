@@ -1,9 +1,13 @@
 {
   "name": "vue-reactive-clipboard",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": {
     "name": "cinob",
     "email": "cinob@foxmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cinob/vue-reactive-clipboard.git"
   },
   "keywords": [
     "vue",
@@ -32,7 +36,8 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "vue-demi": "^0.11.2"
+    "vue-demi": "^0.11.2",
+    "vue-reactive-clipboard": "^0.0.1"
   },
   "peerDependencies": {
     "@vue/composition-api": "^1.0.0-rc.1",
