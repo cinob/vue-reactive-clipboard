@@ -18,6 +18,8 @@ Install with [npm](https://npmjs.com):
 
 ## Usage
 
+### `Vue3`
+
 ```html
 <template>
   <p @click="copy(content)"> {{ content }} </p>
@@ -34,5 +36,35 @@ watchEffect(() => {
     console.log('copy successed: ' + text.value)
   }
 })
+</script>
+```
+### `Vue2`
+
+```html
+<template>
+  <div>
+    <p @click="copy(content)"> {{ content }} </p>
+  </div>
+</template>
+
+<script>
+import { ref, watchEffect, defineComponent } from '@vue/composition-api'
+import { useClipboard } from 'vue-reactive-clipboard'
+export default defineComponent({
+  setup () {
+    const { text, copy } = useClipboard()
+    const content = ref('click me to copy!')
+    watchEffect(() => {
+      if (text.value) {
+        console.log('copy successed: ' + text.value)
+      }
+    })
+    return {
+      content,
+      copy
+    }
+  }
+})
+</script>
 </script>
 ```
